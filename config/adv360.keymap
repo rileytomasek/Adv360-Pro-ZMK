@@ -21,6 +21,11 @@
 #define HYPER    LC(LA(LGUI))
 #define HYP(key) (LC(LA(LG(key)))
 
+&lt {
+    quick_tap_ms = <200>;
+    tapping-term-ms = <150>;
+};
+
 / {
   behaviors {
     #include "macros.dtsi"
