@@ -30,16 +30,6 @@
   behaviors {
     #include "macros.dtsi"
 
-    hm: homerow_mods {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        quick_tap_ms = <175>;
-        flavor = "tap-preferred";
-        bindings = <&kp>, <&kp>;
-    };
-
     // See: https://zmk.dev/docs/behaviors/hold-tap#positional-hold-tap-and-hold-trigger-key-positions
     lh_pht: left_hand_positional_hold_tap {
         compatible = "zmk,behavior-hold-tap";
@@ -49,7 +39,7 @@
         tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
         quick-tap-ms = <200>;
         bindings = <&kp>, <&kp>;
-        hold-trigger-key-positions = <16 17 18 19 20>;    // <---[[right-hand keys]]
+       // hold-trigger-key-positions = <16 17 18 19 20>;    // <---[[right-hand keys]]
     };
   };
 
