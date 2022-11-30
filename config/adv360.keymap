@@ -31,7 +31,7 @@
         label = "LEFT_POSITIONAL_HOLD_TAP";
         #binding-cells = <2>;
         flavor = "tap-unless-interrupted";
-        tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
+        tapping-term-ms = <150>;                        // <---[[produces tap if held longer than tapping-term-ms]]
         quick-tap-ms = <200>;
         bindings = <&kp>, <&kp>;
        // hold-trigger-key-positions = <16 17 18 19 20>;    // <---[[right-hand keys]]
@@ -45,7 +45,6 @@
             bindings = <
 &kp EQUAL       &kp N1          &kp N2          &kp N3          &kp N4          &kp N5 &tog 1                                                                           &mo 3    &kp N6 &kp N7   &kp N8    &kp N9   &kp N0   &kp MINUS
 &kp TAB         &kp Q           &kp W           &kp E           &kp R           &kp T  &kp LBRC                                                                         &kp RBRC &kp Y  &kp U    &kp I     &kp O    &kp P    &kp BSLH
-&mt LCTRL ESC   &lh_pht LALT A  &lh_pht LSFT S  &lh_pht LGUI D  &lh_pht LCTL F  &kp G  &kp LPAR          &kp HYPER  &kp LALT             &kp LGUI  &kp RCTRL           &kp RPAR &kp H  &kp J    &kp K     &kp L    &kp SEMI &kp SQT
 &kp LSHFT       &kp Z           &kp X           &kp C           &kp V           &kp B           &none    &none      &kp HOME &none &none &kp PG_UP &none     &none              &kp N  &kp M    &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
 &mo 2           &kp GRAVE       &kp CAPS        &kp LEFT        &kp RIGHT                       &kp BSPC &kp LGUI   &kp END              &kp PG_DN &kp ENTER &lt 2 SPACE               &kp DOWN &kp UP    &kp LBKT &kp RBKT &mo 2
             >;
