@@ -70,7 +70,7 @@
             bindings = <
 &kp EQUAL       &kp N1          &kp N2          &kp N3          &kp N4          &kp N5 &tog 1                                                                           &mo 3    &kp N6 &kp N7          &kp N8          &kp N9          &kp N0            &kp MINUS
 &kp TAB         &kp Q           &kp W           &kp E           &kp R           &kp T  &kp LBRC                                                                         &kp RBRC &kp Y  &kp U           &kp I           &kp O           &kp P             &kp BSLH
-&mt LCTRL ESC   &lh_pht LSFT A  &lh_pht LALT S  &lh_pht LGUI D  &lh_pht LCTL F  &kp G  &kp LPAR          &kp HYPER  &kp LALT             &kp LGUI  &kp RCTRL            &kp RPAR &kp H  &rh_pht RCTL J  &rh_pht RGUI K  &rh_pht RALT L  &kp SEMI          &kp SQT
+&mt LCTRL ESC   &lh_pht LSFT A  &lh_pht LALT S  &lh_pht LGUI D  &lh_pht LCTL F  &kp G  &kp LPAR          &kp LGUI   &kp LALT             &kp LGUI  &kp RCTRL            &kp RPAR &kp H  &rh_pht RCTL J  &rh_pht RGUI K  &rh_pht RALT L  &kp SEMI          &kp SQT
 &kp LSHFT       &kp Z           &kp X           &kp C           &kp V           &kp B           &none    &none      &kp HOME &none &none &kp PG_UP &none     &none               &kp N  &kp M           &kp COMMA       &kp DOT         &kp FSLH          &kp RSHFT
 &mo 2           &kp GRAVE       &kp CAPS        &kp LEFT        &kp RIGHT                       &kp BSPC &kp HYPER  &kp END              &kp PG_DN &kp ENTER &lt 2 SPACE                &kp DOWN        &kp UP          &kp LBKT        &kp RBKT          &mo 2
             >;
