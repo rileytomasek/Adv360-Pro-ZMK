@@ -4,7 +4,19 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
-#define HYP    LC(LA(LGUI))
+#define HYP      LC(LA(LGUI))
+// Tab nav
+#define T_N   LG(RBRC)
+#define T_P   LG(LBRC)
+// History nav
+#define H_N   LG(RBKT)
+#define H_P   LG(LBKT)
+// App nav
+// TODO: this is a hack to allow a single command+tab. Making it sticky is complex and out of scope right now...
+#define A_P   LG(TAB)
+// Window nav
+// TODO: this is a hack to allow a single command+grave. Making it sticky is complex and out of scope right now...
+#define W_P   LG(GRAVE)
 
 / {
     behaviors {
@@ -27,11 +39,11 @@
 
     default_layer {
       bindings = <
-        &kp EQUAL     &kp N1    &kp N2   &kp N3     &kp N4     &kp N5 &tog 1                                                           &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
-        &kp TAB       &kp Q     &kp W    &kp E      &kp R      &kp T  &none                                                            &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
-        &mt LCTRL ESC &kp A     &kp S    &hm LGUI D &hm LCTL F &kp G  &none           &kp LGUI  &kp LALT &kp LGUI  &kp RCTRL           &none &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
-        &kp LSHFT     &kp Z     &kp X    &kp C      &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &mo 2         &kp GRAVE &kp CAPS &kp LEFT   &kp RIGHT                &kp BSPC &kp HYP   &kp END  &kp PG_DN &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
+        &kp EQUAL     &kp N1    &kp N2   &kp N3     &kp N4     &kp N5 &tog 1                                                           &mo 3   &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
+        &kp TAB       &kp Q     &kp W    &kp E      &kp R      &kp T  &kp H_P                                                          &kp H_N &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
+        &mt LCTRL ESC &kp A     &kp S    &hm LGUI D &hm LCTL F &kp G  &kp T_P         &kp LGUI  &kp LALT &kp LGUI  &kp RCTRL           &kp T_N &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
+        &kp LSHFT     &kp Z     &kp X    &kp C      &kp V      &kp B                            &kp HOME &kp PG_UP                             &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+        &mo 2         &kp GRAVE &kp CAPS &kp LEFT   &kp RIGHT                &kp BSPC &kp HYP   &kp A_P  &kp W_P   &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
       >;
     };
     keypad {
